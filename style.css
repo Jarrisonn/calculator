@@ -1,0 +1,115 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container{
+    height: 500px;
+    width: 500px;
+    display:grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+    text-align: center;
+    margin: 250px auto;
+    grid-template-areas: 
+    "firstNum firstNum firstNum firstNum"
+    "secondNum secondNum secondNum secondNum"
+    "nine eight seven add"
+    "six five four subtract"
+    "three two one multiply"
+    "dot dot zero divide"
+    "clear clear clear clear";
+    gap: 10px;
+    
+    
+}
+
+
+.btn{
+    background-color: transparent;
+    border: 1px solid black;
+    border-radius: 5%;
+    cursor: pointer;
+    font-size: 1.2rem;
+}
+
+.firstNumArea{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    grid-area: firstNum;
+    border: 1px solid black;
+    
+    
+}
+
+.secondNumArea{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid black;
+    grid-area: secondNum;
+    
+}
+
+.nine{
+    grid-area: nine;
+}
+
+.eight{
+    grid-area: eight;
+}
+
+.seven{
+    grid-area: seven;
+}
+
+.six{
+    grid-area: six;
+}
+
+.five{
+    grid-area: five;
+}
+
+.four{
+    grid-area: four;
+}
+
+.three{
+    grid-area: three;
+}
+
+.two{
+    grid-area: two;
+}
+
+.one{
+    grid-area: one;
+}
+
+.zero{
+    grid-area: zero;
+}
+
+.add{
+    grid-area: add;
+}
+
+.minus{
+    grid-area: subtract;
+}
+
+.times{
+    grid-area: multiply;
+}
+
+.divide{
+    grid-area: divide;
+}
+
+.clear{
+    grid-area: clear;
+    padding: 10px 0px;
+}
